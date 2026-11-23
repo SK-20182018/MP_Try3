@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaWise | Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-body">
+
+    <main class="login-card">
+
+        <a class="brand centered" href="index.html">
+            <span class="brand-icon">💧</span>
+            <span>AquaWise<small>WATER, WISELY.</small></span>
+        </a>
+
+        <div class="login-emoji">🫧</div>
+
+        <h1>Welcome Back!</h1>
+        <p class="muted">Sign in to continue your water-wise journey.</p>
+
+        <form id="loginForm">
+
+            <label>Email Address
+                <input type="email" id="loginEmail"
+                placeholder="you@example.com" required>
+            </label>
+
+            <label>Password
+                <input type="password" id="loginPassword"
+                placeholder="Enter password" required>
+            </label>
+
+            <button class="button full" type="submit">
+                Continue to Dashboard
+            </button>
+
+            <p id="loginMessage" class="message"></p>
+
+        </form>
+
+        <p class="tiny">
+            Demo login only. Real authentication has not been connected yet.
+        </p>
+
+        <a class="back-link" href="index.html">← Back to Website</a>
+
+    </main>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaWise | Settings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+        <a class="brand" href="index.html">
+            <span class="brand-icon">💧</span>
+            <span>AquaWise<small>WATER, WISELY.</small></span>
+        </a>
+
+        <nav>
+            <a href="index.html">▦ Dashboard</a>
+            <a href="usage.html">◷ Water Usage</a>
+            <a href="profile.html">◉ My Profile</a>
+            <a class="active" href="settings.html">⚙ Settings</a>
+        </nav>
+
+        <div class="side-note">
+            <div>🌱</div>
+            <b>Every drop counts!</b>
+            <p>Small daily changes can make a big difference.</p>
+        </div>
+
+        <a class="logout" href="login.html">↪ Log out</a>
+    </aside>
+
+    <main class="main">
+
+        <header class="topbar">
+            <div>
+                <p class="eyebrow">MAKE IT YOURS</p>
+                <h1>Settings</h1>
+                <p class="muted">Manage your AquaWise preferences.</p>
+            </div>
+            <div class="avatar">S</div>
+        </header>
+
+        <section class="panel settings-panel">
+
+            <h3>Preferences</h3>
+
+            <div class="setting-row">
+                <div>
+                    <b>Pastel Appearance</b>
+                    <p class="muted">Keep the soft pastel colour palette.</p>
+                </div>
+                <span class="pill">Enabled</span>
+            </div>
+
+            <div class="setting-row">
+                <div>
+                    <b>Usage Reminders</b>
+                    <p class="muted">Enable the reminder preference.</p>
+                </div>
+                <label class="switch">
+                    <input type="checkbox" id="reminders">
+                    <span></span>
+                </label>
+            </div>
+
+            <div class="setting-row">
+                <div>
+                    <b>Data Storage</b>
+                    <p class="muted">Entries are stored in this browser.</p>
+                </div>
+                <span class="pill">Local</span>
+            </div>
+
+            <div class="setting-row">
+                <div>
+                    <b>Clear All Usage Data</b>
+                    <p class="muted">Remove all saved usage entries.</p>
+                </div>
+                <button class="danger" id="deleteData">Clear Data</button>
+            </div>
+
+            <p id="settingsMessage" class="message"></p>
+
+        </section>
+
+        <footer>
+            Cloud syncing and real authentication can be added later.
+        </footer>
+
+    </main>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

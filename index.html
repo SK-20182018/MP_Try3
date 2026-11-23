@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaWise | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+        <a class="brand" href="index.html">
+            <span class="brand-icon">💧</span>
+            <span>AquaWise<small>WATER, WISELY.</small></span>
+        </a>
+
+        <nav>
+            <a class="active" href="index.html">▦ Dashboard</a>
+            <a href="usage.html">◷ Water Usage</a>
+            <a href="profile.html">◉ My Profile</a>
+            <a href="settings.html">⚙ Settings</a>
+        </nav>
+
+        <div class="side-note">
+            <div>🌱</div>
+            <b>Every drop counts!</b>
+            <p>Small daily changes can make a big difference.</p>
+        </div>
+
+        <a class="logout" href="login.html">↪ Log out</a>
+    </aside>
+
+    <main class="main">
+
+        <header class="topbar">
+            <div>
+                <p class="eyebrow">AQUAWISE OVERVIEW</p>
+                <h1>Your Water Dashboard</h1>
+                <p class="muted">A clearer picture of your household water habits.</p>
+            </div>
+            <a class="avatar" href="profile.html">S</a>
+        </header>
+
+        <section class="welcome">
+            <div>
+                <span class="pill">YOUR DAILY SNAPSHOT</span>
+                <h2>Make every drop count! 💦</h2>
+                <p>Track your water usage and build mindful habits.</p>
+                <a class="button" href="usage.html">+ Add Today's Usage</a>
+            </div>
+            <div class="welcome-art">💧</div>
+        </section>
+
+        <section class="stats">
+            <article class="stat lilac">
+                <span>Latest Usage</span>
+                <strong id="todayTotal">0 L</strong>
+                <small>Latest recorded day</small>
+            </article>
+
+            <article class="stat mint">
+                <span>Per Person</span>
+                <strong id="perPerson">0 L</strong>
+                <small>Average household use</small>
+            </article>
+
+            <article class="stat peach">
+                <span>Entries Logged</span>
+                <strong id="entryCount">0</strong>
+                <small>Recorded days</small>
+            </article>
+        </section>
+
+        <section class="grid-two">
+
+            <article class="panel">
+                <div class="panel-head">
+                    <div>
+                        <h3>Recent Water Usage</h3>
+                        <p class="muted">Your latest recorded days</p>
+                    </div>
+                    <a href="usage.html">View History →</a>
+                </div>
+
+                <div class="chart" id="chart">
+                    <p class="muted">Add usage entries to see your chart.</p>
+                </div>
+            </article>
+
+            <article class="panel tip">
+                <span class="tip-icon">🌿</span>
+                <h3>Water Saving Tip</h3>
+                <p>
+                    Turn off the tap while brushing your teeth.
+                    Small habits can help conserve water.
+                </p>
+                <a href="usage.html">Explore your usage →</a>
+            </article>
+
+        </section>
+
+        <footer>
+            AQUAWISE • A SIMPLE WAY TO USE WATER WISELY
+        </footer>
+
+    </main>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

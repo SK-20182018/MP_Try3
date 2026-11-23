@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaWise | Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+        <a class="brand" href="index.html">
+            <span class="brand-icon">💧</span>
+            <span>AquaWise<small>WATER, WISELY.</small></span>
+        </a>
+
+        <nav>
+            <a href="index.html">▦ Dashboard</a>
+            <a href="usage.html">◷ Water Usage</a>
+            <a class="active" href="profile.html">◉ My Profile</a>
+            <a href="settings.html">⚙ Settings</a>
+        </nav>
+
+        <div class="side-note">
+            <div>🌱</div>
+            <b>Every drop counts!</b>
+            <p>Small daily changes can make a big difference.</p>
+        </div>
+
+        <a class="logout" href="login.html">↪ Log out</a>
+    </aside>
+
+    <main class="main">
+
+        <header class="topbar">
+            <div>
+                <p class="eyebrow">YOUR ACCOUNT</p>
+                <h1>My Profile</h1>
+                <p class="muted">Manage your personal details.</p>
+            </div>
+            <div class="avatar">S</div>
+        </header>
+
+        <section class="panel profile-panel">
+
+            <div class="profile-hero">
+                <div class="big-avatar">S</div>
+                <div>
+                    <h2 id="profileHeading">Hello, AquaWise User!</h2>
+                    <p class="muted">Your water-conscious journey starts here.</p>
+                </div>
+            </div>
+
+            <form id="profileForm" class="form-grid">
+
+                <label>Full Name
+                    <input type="text" id="fullName" placeholder="Enter your name">
+                </label>
+
+                <label>Email Address
+                    <input type="email" id="email" placeholder="name@example.com">
+                </label>
+
+                <label>Household Size
+                    <input type="number" id="household" min="1" value="3">
+                </label>
+
+                <label>City
+                    <input type="text" id="city" placeholder="Your city">
+                </label>
+
+                <button class="button full" type="submit">
+                    Save Profile
+                </button>
+
+                <p id="profileMessage" class="message"></p>
+
+            </form>
+
+        </section>
+
+        <footer>
+            Profile details are saved in this browser.
+        </footer>
+
+    </main>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
